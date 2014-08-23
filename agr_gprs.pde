@@ -110,43 +110,7 @@ value_vane=SensorAgrV20.readValue(SENS_AGR_VANE);
   // Turn off the sensor
   SensorAgrV20.setSensorMode(SENS_OFF, SENS_AGR_VANE);
   
-  // Part 2: USB printing 
-  switch(SensorAgrV20.vane_direction)
-  {
-    case  SENS_AGR_VANE_N   :  USB.println("N");
-                               break;
-    case  SENS_AGR_VANE_NNE :  USB.println("NNE");
-                               break;
-    case  SENS_AGR_VANE_NE  :  USB.println("NE");
-                               break;
-    case  SENS_AGR_VANE_ENE :  USB.println("ENE");
-                               break;
-    case  SENS_AGR_VANE_E   :  USB.println("E");
-                               break;
-    case  SENS_AGR_VANE_ESE :  USB.println("ESE");
-                               break;
-    case  SENS_AGR_VANE_SE  :  USB.println("SE");
-                               break;
-    case  SENS_AGR_VANE_SSE :  USB.println("SSE");
-                               break;
-    case  SENS_AGR_VANE_S   :  USB.println("S");
-                               break;
-    case  SENS_AGR_VANE_SSW :  USB.println("SSW");
-                               break;
-    case  SENS_AGR_VANE_SW  :  USB.println("SW");
-                               break;
-    case  SENS_AGR_VANE_WSW :  USB.println("WSW");
-                               break;
-    case  SENS_AGR_VANE_W   :  USB.println("W");
-                               break;
-    case  SENS_AGR_VANE_WNW :  USB.println("WNW");
-                               break;
-    case  SENS_AGR_VANE_NW  :  USB.println("WN");
-                               break;
-    case  SENS_AGR_VANE_NNW :  USB.println("NNW");
-                               break;
-  }
-
+  
  //char tempstring[] = "";
   
 USB.print("temperature: ");
